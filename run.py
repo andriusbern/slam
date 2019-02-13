@@ -12,11 +12,10 @@ import numpy as np
 def loop(robot):
     
     """
-    Agent control
+    Agent control loop
     """
     
-
-
+    
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
@@ -50,10 +49,6 @@ if __name__ == "__main__":
         
         while step < settings.simulation_steps:
 
-            # Keep this part untouched
-            # im = environment.get_vision_image(camera_handle)[2]
-            # print(len(im))
-            
             display.update()
             environment.step_simulation()              # Advance the simulation by one step
             loop(robot)
@@ -67,10 +62,7 @@ if __name__ == "__main__":
                 print('Hit an obstacle!\nTime: {}'.format(time.time() - start))
                 environment.destroy_instances()
                 break
-            # if im[2] != 0:
-            #     plt.imshow(im)
-            #     plt.show()
-            #     print(len(im[2]))
+
     except KeyboardInterrupt:
         end = time.time()
         print('\n\nInterrupted! Time: {}s'.format(end-start))
