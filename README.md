@@ -1,6 +1,6 @@
 # Simultaneous Localization and Mapping in V-REP
 
-A demonstration of Random Mutation Hill-Climbing SLAM in Vrep and python. Using a 134 point lidar, updating the map every .5s
+A demonstration of Random Mutation Hill-Climbing SLAM in Vrep and python.
 
 Requirements:
     numpy, opencv-python
@@ -11,6 +11,7 @@ Requirements:
 ## Usage
 
 Run the demo in a room environment using Pioneer robot:
+
     python run.py 
 
 Credits:
